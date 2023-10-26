@@ -1,0 +1,14 @@
+.container{
+
+}
+.title{
+background-color: chocolate;
+padding: 5px 10px;
+color: aliceblue;
+text-align-last: center;
+text-transform: capitalize;
+}
+.content{
+  display: flex;
+  gap: 50px;
+}
