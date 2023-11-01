@@ -15,7 +15,7 @@ const LoginPage = () => {
   if (status === "authenticated") {
     router.push("/")
   }
-  
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -23,7 +23,7 @@ const LoginPage = () => {
           Sign in with Google
         </div>
         <div className={styles.socialButton}>Sign in with Github</div>
-        <div className={styles.socialButton}>Sign in with Facebook</div>
+        <div className={styles.socialButton} onClick={() => signIn("facebook")}>Sign in with Facebook</div>
       </div>
     </div>
   );
