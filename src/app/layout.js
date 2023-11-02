@@ -5,6 +5,7 @@ import Footer from '@/components/footer/Footer'
 import ThemeContextProvider from '@/context/ThemeContext'
 import ThemeProvider from '@/providers/ThemeProvider'
 import AuthProvider from '@/providers/AuthProvider'
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
             <ThemeProvider>
               <div className="container">
                 <div className="wrapper">
+                  <NextTopLoader />
                   <Navbar />
                   {children}
                   <Footer />
